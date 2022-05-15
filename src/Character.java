@@ -1,15 +1,16 @@
 
 public class Character {
 	
-	String Name, Race, Class;
+	String Name, Class;
 	int Level;
+	Race RCE;
 	
 	
 	
 	public Character()
 	{
 		Name 	= "Default Name";
-		Race 	= "Default Race";
+		RCE 	= new Race();
 		Class	= "Default Class";
 		Level	= 0;
 				
@@ -19,7 +20,7 @@ public class Character {
 	public Character(String name, String race, String clss, int lvl) 
 	{
 		Name = name;
-		Race = race;
+		RCE = new Race(race);
 		Class = clss;
 		Level = lvl;
 		
@@ -32,8 +33,20 @@ public class Character {
 	
 	public void setRace(String race) 
 	{
-		Race = race;
+		RCE = new Race(race);
 	}
+	
+	public void setRace(Race rce) 
+	{
+		RCE = rce;
+		
+		
+		
+		
+	}
+	
+	
+	
 	
 	public void setclss(String clss) 
 	{
@@ -52,9 +65,9 @@ public class Character {
 		return Name;
 	}
 	
-	public String getRace() 
+	public Race getRace() 
 	{
-		return Race;
+		return RCE;
 	}
 	
 	public String getClss() 
@@ -70,7 +83,7 @@ public class Character {
 	
 	@Override
 	public String toString() {
-		String built = Name + ", " + Race + ", Level " + Level + " " + Class;
+		String built = Name + ", " + RCE + ", Level " + Level + " " + Class;
 		return built;
 	}
 	

@@ -11,6 +11,11 @@ public class Race {
 		
 	}
 	
+	public Race(String name) {
+		RaceName =name;
+		
+	}
+	
 	
 	public void setRaceName(String raceName) {
 		RaceName = raceName;
@@ -33,7 +38,14 @@ public class Race {
 	
 	@Override
 	public String toString() {
-		String built = RaceName +" " +RaceOrigin;
+		
+		String built = RaceName;
+		
+		if(!(RaceOrigin == null)) 
+		{
+			built += ", " + RaceOrigin;
+		}
+		
 		return built;
 	}
 	
