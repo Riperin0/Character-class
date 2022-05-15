@@ -1,5 +1,5 @@
 
-public class main {
+public class Driver {
 	
 	static Character Test = new Character();
 	static Race bleh = new Race("LizardFolk", "Swamps");
