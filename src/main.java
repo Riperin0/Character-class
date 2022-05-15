@@ -2,7 +2,8 @@
 public class main {
 	
 	static Character Test = new Character();
-	static Character Kothar = new Character("Kothar", "LizardFold", "Druid", 5);
+	static Race bleh = new Race("LizardFolk", "Swamps");
+	static Character Kothar = new Character("Kothar", bleh, "Druid", 5);
 	
 	public static void main(String[] args) {
 		

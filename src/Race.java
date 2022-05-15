@@ -18,7 +18,7 @@ public class Race {
 	
 	public Race(String name, String origin) {
 		RaceName =name;
-		RaceOrigin=origin;
+		RaceOrigin= origin;
 	}
 	
 	
@@ -50,7 +50,7 @@ public class Race {
 		
 		if(!(RaceOrigin == null)) 
 		{
-			built += ", " + RaceOrigin;
+			built += "(" + RaceOrigin +")";
 		}
 		
 		return built;

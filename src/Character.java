@@ -26,6 +26,16 @@ public class Character {
 		
 	}
 	
+	public Character(String name, Race race, String clss, int lvl) 
+	{
+		Name = name;
+		RCE = race;
+		Class = clss;
+		Level = lvl;
+		
+	}
+	
+	
 	public void setName(String name) 
 	{
 		Name = name;		
