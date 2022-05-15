@@ -16,6 +16,13 @@ public class Race {
 		
 	}
 	
+	public Race(String name, String origin) {
+		RaceName =name;
+		RaceOrigin=origin;
+	}
+	
+	
+	
 	
 	public void setRaceName(String raceName) {
 		RaceName = raceName;
